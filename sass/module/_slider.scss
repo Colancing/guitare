@@ -1,0 +1,50 @@
+/**********************SLIDER *********************/
+.slider {
+  position: relative;
+  height: 865px;
+  background-color: #9e9e9e;
+
+  .slider-text {
+    margin-top: 425px;
+    color: white;
+  }
+  .white-bump, .down {
+    position: absolute;
+    top: 829px;
+    left: 850px - 93px;
+  }
+
+  .down {
+    color:#ab987a;
+    font-size: 16px;
+    top :840px;
+    left: 850px - 8px;
+
+  }
+
+  .slider-pagination {
+    position: absolute;
+    top: 325px;
+    right: 0px;
+    height: 100px;
+    li {
+      margin-bottom: 50px;
+      i {
+        color: white;
+        font-size: 25px;
+      }
+    }
+
+  }
+
+  .slider-player {
+    width: 170px;
+    height: 122px;
+    margin: 40px 0 80px;
+
+    background-image: url(img/background-video.jpg);
+
+    text-align: center;
+    line-height: 122px;
+  }
+}

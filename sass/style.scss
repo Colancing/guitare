@@ -1,4 +1,9 @@
-@import "base/reset.scss",
-        "base/base",
-        "module/header.scss",
-        "layout/layout.scss";
+@import
+"compass",
+"base/variable",
+"base/reset",
+"base/base",
+"module/header",
+"module/slider",
+"module/services",
+"layout/layout";

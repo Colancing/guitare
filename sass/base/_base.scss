@@ -1,3 +1,51 @@
-body {
-  background-color:white;
+@font-face {
+  font-family: 'Lato';
+  src: url('/font/Lato-Bold.ttf');
+  src: url('/font/Lato-Italic.ttf');
+  src: url('/font/Lato-LightItalic.ttf');
+  src: url('/font/Lato-Light.ttf');
+  src: url('/font/Lato-Regular.ttf');
+  src: url('/font/Roboto-Bold.ttf');
+  src: url('/font/Roboto-Thin.ttf');
+  src: url('/font/Roboto-Thinitalic.ttf');
 }
+
+
+body {
+  background-color:#f8f9fb;
+  font-family: 'lato', sans-serif;
+}
+.container-big {
+   max-width : 1700px;
+  //border : 2px red solid;
+}
+.container-middle {
+  max-width : 1200px;
+  //border : 1px blue solid;
+}
+p{
+  font-family: Lato-Light, sans-serif;
+  font-size: 16px;
+  line-height:26px;
+  color: #616161;
+}
+h2 {
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size : 26px;
+  line-height:24px;
+  color: #032f3e;
+  text-align:center;
+  text-transform:uppercase;
+}
+h3 {
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size : 70px;
+}
+h4 {
+  font-family: 'Roboto-Thin', sans-serif;
+  font-size : 70px;
+}
+li {
+  list-style: none;
+}
+

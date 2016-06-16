@@ -9,3 +9,4 @@ out
 gen
 bower_components/
 node_modules/
+/.sass-cache/

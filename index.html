@@ -31,71 +31,118 @@
     <title>Projet html</title>
 
     <link href='bower_components/font-awesome/css/font-awesome.css' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css" media="screen">
 
 
 </head>
 <body>
-<div class="container-fluid">
-<div class="row">
-    <header>
-        <div class="container-fluid">
+<div class="container-fluid container-big">
+    <div class="row">
+        <header>
             <div class="col-xs-12 topbar">
-                <div class="col-md-offset-1 col-md-10">
-                    <div class="col-md-6">
-                        <h1>
-                            <a href="#">
-                                <img src="img/logo.png" alt="guitar">
-                            </a>
-                        </h1>
-                    </div>
-                    <div class="col-md-6 right-items">
-                        <div class="row"></div>
-                        <div class="skype col-md-4">guitarlessons</div>
-                        <div class="tel col-md-4">013 045 608 65</div>
-                        <div class="social col-md-4">
-                            <a href="" class="col-md-3">fb</a>
-                            <a href="" class="col-md-3">tw</a>
-                            <a href="" class="col-md-3">g+</a>
-                            <a href="" class="col-md-3">rss</a>
+                <div class="container container-middle">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1>
+                                <a href="#">
+                                    <img src="img/logo.png" alt="guitar">
+                                </a>
+                            </h1>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <nav class="nav navbar-default " role="navigation">
-            <div class="row bluenav">
-                <div class="collapse navbar-collapse">
-                    <div class="col-md-offset-1 col-md-10">
-                        <ul class="nav navbar-nav col-md-12">
-                            <li class="active col-md-2"><a>HOME</a></li>
-                            <li class="col-md-2"><a class="text-center">ABOUT US</a></li>
-                            <li class="col-md-2"><a>LESSONS</a></li>
-                            <li class="col-md-2"><a>PORTFOLIO</a></li>
-                            <li class="col-md-2"><a>BLOG</a></li>
-                            <li class="col-md-2"><a>CONTACT</a></li>
+                        <ul class="col-md-6 right-items pull-right">
+                            <li class="skype col-md-4"><i class="fa fa-skype" aria-hidden="true"></i> guitarlessons</li>
+                            <li class="tel col-md-4"><i class="fa fa-phone" aria-hidden="true"></i> 013 045 608 65</li>
+                            <li class="social col-md-4">
+                                <a href="" class="col-md-3"><i class="fa fa-facebook"
+                                                               aria-hidden="true"></i></a>
+                                <a href="" class="col-md-3"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="" class="col-md-3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="" class="col-md-3"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="slider">slider</div>
-    <div class="content">
-        <section class="services">services</section>
-        <section class="lessons">lessons</section>
-        <section class="projects">projects</section>
-        <section class="action">action</section>
-        <section class="news">news</section>
-        <section class="testimonials">testimonials</section>
-    </div>
-    <div class="map">map</div>
-    <footer>footer</footer>
+            <div class="container-fluid container-big">
+                <nav class="nav navbar-default " role="navigation">
+                    <div class="row bluenav">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navi">
+                            <div class="container container-middle">
+                                <div class="row">
+                                    <ul class="nav navbar-nav col-md-12">
+                                        <li class="col-md-2 active"><a class="home">HOME</a></li>
+                                        <li class="col-md-2"><a>ABOUT US</a></li>
+                                        <li class="col-md-2"><a>LESSONS</a></li>
+                                        <li class="col-md-2"><a>PORTFOLIO</a></li>
+                                        <li class="col-md-2 active"><a>BLOG</a></li>
+                                        <li class="col-md-2"><a>CONTACT</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
 
-</div> <!--fin de container-->
+        </header>
+        <div class="slider">
+            <div class="container-fluid slider-pagination">
+                <menu>
+                    <li><i class="fa fa-angle-up" aria-hidden="true"></i></li>
+                    <li><img class="slider-losanges" src="img/pagination.png" alt="losanges de pagination"></li>
+                    <li><i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                </menu>
+            </div>
+
+            <div class="container container-middle">
+                <div class="slider-text pull-right">
+                    <h3>CHECK OUR VIDEO</h3>
+                    <h4>LEARNING IN 6 WEEKS</h4>
+                    <div class="slider-player pull-right">
+                        <img src="img/lecteur.png" alt="image de presentation video">
+                    </div>
+                </div>
+                <div class="slider-down-icon">
+                    <img class="white-bump" src="img/button-bas-slider.png" alt="down button">
+                    <span><i class="fa fa-chevron-down down"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <section class="services">
+                <h2>services</h2>
+                <div class="line-separator"></div>
+                <div class="container container-middle">
+                    <p class="col-md-offset-2 col-md-8 text-center services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum esse, facilis in
+                        iste quis quisquam quod reiciendis sequi temporibus voluptatem?</p>
+                </div>
+            </section>
+            <section class="lessons">lessons</section>
+            <section class="projects">
+                <h2>projects</h2>
+            </section>
+            <section class="action">action</section>
+            <section class="news">
+                <h2>news</h2>
+            </section>
+            <section class="testimonials">
+                <h2>testimonials</h2>
+            </section>
+        </div>
+        <div class="map">map</div>
+        <footer>footer</footer>
+
+    </div> <!--fin de container-->
 </div>
 
 <!--script pou utiliser es6-->
@@ -103,8 +150,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser-polyfill.js"></script>
 <script type="text/babel"></script>
 <!--script bootstrap et jquery-->
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <!--script alerte pour anciens navigateurs-->
 <script>
     var buoop = {c: 2};
