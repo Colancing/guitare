@@ -497,6 +497,14 @@ li {
   list-style: none;
 }
 
+/* line 51, sass/base/_base.scss */
+.line-separator {
+  height: 2px;
+  width: 30px;
+  margin: 30px auto;
+  background: #ab987a;
+}
+
 /* Hierargiser un bloc de style
     .laClass {
         Box
@@ -625,14 +633,6 @@ li {
   background-image: url(img/background-video.jpg);
   text-align: center;
   line-height: 122px;
-}
-
-/* line 1, sass/module/_services.scss */
-.line-separator {
-  height: 2px;
-  width: 30px;
-  margin: 30px auto;
-  background: #ab987a;
 }
 
 /* Hierarchie de dossier Smacss

@@ -48,4 +48,9 @@ h4 {
 li {
   list-style: none;
 }
-
+.line-separator {
+  height: 2px;
+  width: 30px;
+  margin: 30px auto;
+  background: $taupe;
+}
