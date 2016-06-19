@@ -1,9 +1,13 @@
 @import
 "compass",
+"compass/layout/grid-background",
 "base/variable",
 "base/reset",
 "base/base",
+"layout/layout",
 "module/header",
 "module/slider",
 "module/services",
-"layout/layout";
+'module/lesson',
+'module/projects',
+'module/action';

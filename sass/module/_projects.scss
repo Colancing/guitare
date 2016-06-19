@@ -1,0 +1,66 @@
+//architecture smaccs. Import dans style.scss :  smacss->
+//détail du contenu des dossiers smacss : detail ->
+// coller ordre hierarchie bloc de style : order ->
+
+/***************** Projects *************************/
+.projects {
+  .project-top{
+    padding-bottom:110px;
+  }
+.blockbottom {
+  height: 80px;
+}
+  .block-top-right {
+    padding:65px 15px 0 30px;
+    p{
+      font-family : Roboto, sans-serif;
+      font-size:14px;
+      line-height: 23px;
+      margin:0;
+      padding-bottom:30px;
+    }
+    .calendar{
+      color: #b5b5b5;
+    }
+    .folder{
+      color: $taupe;
+    }
+    .show-text-top{
+      font-family: Roboto-Bold, sans-serif;
+      font-size:18px;
+      line-height:29px;
+      color:$darkblue;
+      text-transform: uppercase;
+      padding:0;
+      margin:0;
+    }
+    .show-text{
+      font-family:Lato-Light, sans-serif;
+      font-size:16px;
+      line-height:26px;
+      color:#616161;
+      padding-bottom:50px;
+    }
+    .show-social{
+      margin-top:70px;
+      span{
+        padding-right:30px;
+        font-size:14px;
+        line-height:23px;
+        color:#b5b5b5;
+        .fa{
+          font-size:18px;
+        }
+      }
+    }
+  }
+  .blocknavi{
+    padding-top:30px;
+    color:#b5b5b5;
+    font-size:24px;
+  }
+  .show {
+    height: 568px;
+  }
+
+}

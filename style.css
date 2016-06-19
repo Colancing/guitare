@@ -446,58 +446,80 @@ th {
   src: url("/font/Roboto-Thin.ttf");
   src: url("/font/Roboto-Thinitalic.ttf");
 }
-/* line 14, sass/base/_base.scss */
+/* line 13, sass/base/_base.scss */
 body {
   background-color: #f8f9fb;
   font-family: 'lato', sans-serif;
 }
 
 /* line 18, sass/base/_base.scss */
-.container-big {
+.container-big, container-middle {
   max-width: 1700px;
+  padding: 0;
+  margin: 0 auto;
 }
 
-/* line 22, sass/base/_base.scss */
+/* line 25, sass/base/_base.scss */
 .container-middle {
   max-width: 1200px;
 }
 
-/* line 26, sass/base/_base.scss */
+/* line 30, sass/base/_base.scss */
+.container-small {
+  max-width: 1070px;
+}
+
+/* line 35, sass/base/_base.scss */
 p {
   font-family: Lato-Light, sans-serif;
   font-size: 16px;
   line-height: 26px;
   color: #616161;
+  margin-bottom: 40px;
 }
 
-/* line 32, sass/base/_base.scss */
+/* line 43, sass/base/_base.scss */
 h2 {
   font-family: 'Roboto-Bold', sans-serif;
   font-size: 26px;
+  padding: 120px 0 17px;
   line-height: 24px;
-  color: #032f3e;
+  color: #0d3948;
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 40, sass/base/_base.scss */
-h3 {
+/* line 53, sass/base/_base.scss */
+h3, h4 {
   font-family: 'Roboto-Bold', sans-serif;
   font-size: 70px;
+  color: #fff;
 }
 
-/* line 44, sass/base/_base.scss */
+/* line 59, sass/base/_base.scss */
 h4 {
   font-family: 'Roboto-Thin', sans-serif;
-  font-size: 70px;
 }
 
-/* line 48, sass/base/_base.scss */
+/* line 63, sass/base/_base.scss */
+h5, h6 {
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size: 30px;
+  line-height: 42px;
+  color: #0d3948;
+}
+
+/* line 70, sass/base/_base.scss */
+h6 {
+  font-family: 'Roboto-Thin', sans-serif;
+}
+
+/* line 74, sass/base/_base.scss */
 li {
   list-style: none;
 }
 
-/* line 51, sass/base/_base.scss */
+/* line 78, sass/base/_base.scss */
 .line-separator {
   height: 2px;
   width: 30px;
@@ -505,6 +527,50 @@ li {
   background: #ab987a;
 }
 
+/* line 85, sass/base/_base.scss */
+.greyback {
+  background-color: #9e9e9e;
+}
+
+/* line 89, sass/base/_base.scss */
+.whiteback {
+  background-color: #fff;
+}
+
+/* line 93, sass/base/_base.scss */
+.pinkback {
+  background-color: pink;
+}
+
+/* line 97, sass/base/_base.scss */
+.square-box {
+  display: inline-block;
+  width: 253px;
+  border: 1px solid #0d3948;
+  font-family: Roboto-Bold, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 22px;
+  color: #fff;
+  text-align: center;
+  background-color: #0d3948;
+}
+
+/* Hierarchie de dossier Smacss
+    1- Base (p, body, h1, h2....)
+    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
+    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
+    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
+    5- Theme (.dark, .light,....) necessaire surtout lors de thème personnalisablke avec plusieurs couleurs
+  
+  Hierargiser un bloc de style
+    .laClass {
+        Box
+        Border
+        Background  
+        text
+        other
+    }*/
 /* Hierargiser un bloc de style
     .laClass {
         Box
@@ -514,35 +580,21 @@ li {
         other
     }*/
 /* line 10, sass/module/_header.scss */
-.topbar {
-  height: 100px;
+header .topbar {
   background-color: white;
   font-family: Lato, sans-serif;
-  line-height: 100px;
+  line-height: 90px;
 }
-
-/* line 17, sass/module/_header.scss */
-.logo {
-  width: 100%;
-  height: 100%;
-  border: 1px black solid;
+/* line 14, sass/module/_header.scss */
+header .topbar h1 {
+  margin: 0.67em 0;
 }
-
-/* line 23, sass/module/_header.scss */
-.right-items {
-  text-align: center;
-  color: #032f3e;
-}
-/* line 27, sass/module/_header.scss */
-.right-items .fa-phone, .right-items .fa-skype {
-  color: #b1a085;
-}
-/* line 30, sass/module/_header.scss */
-.right-items a {
+/* line 26, sass/module/_header.scss */
+header a {
   color: #032f3e;
 }
 
-/* line 35, sass/module/_header.scss */
+/* line 31, sass/module/_header.scss */
 .bluenav {
   position: relative;
   z-index: 1;
@@ -552,43 +604,41 @@ li {
   box-shadow: #656565 0 30px 30px;
 }
 
-/* line 42, sass/module/_header.scss */
-.navbar-default .navbar-nav {
-  background-color: #032f3e;
-}
-/* line 44, sass/module/_header.scss */
+/* line 40, sass/module/_header.scss */
 .navbar-default .navbar-nav .active > a {
   font-family: 'Roboto-Thinitalic', sans-serif;
   font-weight: lighter;
-  background-color: #0d3948;
+  background-color: #032f3e;
   color: white;
 }
-/* line 50, sass/module/_header.scss */
+/* line 47, sass/module/_header.scss */
 .navbar-default .navbar-nav li {
   text-align: center;
   border: 1px solid #0d3948;
 }
-/* line 53, sass/module/_header.scss */
+/* line 50, sass/module/_header.scss */
 .navbar-default .navbar-nav li a {
   color: white;
-  font-family: sans-serif, Roboto;
-  font-weight: bold;
+  font-family: Roboto-Bold, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  height: 96px;
+  line-height: 80px;
 }
-/* line 58, sass/module/_header.scss */
+/* line 59, sass/module/_header.scss */
 .navbar-default .navbar-nav li a:hover {
   color: #ab987a;
 }
-/* line 61, sass/module/_header.scss */
+/* line 62, sass/module/_header.scss */
 .navbar-default .navbar-nav li .home {
   color: #ab987a;
-  background-color: inherit;
 }
 
 /**********************SLIDER *********************/
 /* line 2, sass/module/_slider.scss */
 .slider {
   position: relative;
-  height: 865px;
+  height: 860px;
   background-color: #9e9e9e;
 }
 /* line 7, sass/module/_slider.scss */
@@ -635,18 +685,204 @@ li {
   line-height: 122px;
 }
 
-/* Hierarchie de dossier Smacss
-    1- Base (p, body, h1, h2....)
-    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
-    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
-    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
-    5- Theme (.dark, .light,....) necessaire surtout lors de thème personnalisablke avec plusieurs couleurs
-  
-  Hierargiser un bloc de style
-    .laClass {
-        Box
-        Border
-        Background  
-        text
-        other
-    }*/
+/* line 1, sass/module/_services.scss */
+.services {
+  background-color: #f8f9fb;
+  min-height: 860px;
+}
+/* line 4, sass/module/_services.scss */
+.services .icon {
+  padding: 105px 0 0;
+}
+/* line 8, sass/module/_services.scss */
+.services .services-text {
+  font-size: 18px;
+  line-height: 29px;
+  margin: 25px 100px;
+}
+
+/***************** LESSON *************************/
+/* line 3, sass/module/_lesson.scss */
+.lessons {
+  background-color: #032f3e;
+  color: #fff;
+  padding: 100px 0;
+}
+/* line 8, sass/module/_lesson.scss */
+.lessons .lessons-left {
+  padding-top: 10px;
+  text-align: center;
+}
+/* line 12, sass/module/_lesson.scss */
+.lessons p {
+  font-family: Roboto-Bold, sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+/* line 21, sass/module/_lesson.scss */
+.lessons h4 {
+  margin-bottom: 90px;
+}
+/* line 25, sass/module/_lesson.scss */
+.lessons .vertical-separator {
+  border-left: 1px #ab987a solid;
+  margin: 18px 0 18px 30px;
+  height: 57px;
+}
+
+/***************** Projects *************************/
+/* line 7, sass/module/_projects.scss */
+.projects .project-top {
+  padding-bottom: 110px;
+}
+/* line 10, sass/module/_projects.scss */
+.projects .blockbottom {
+  height: 80px;
+}
+/* line 13, sass/module/_projects.scss */
+.projects .block-top-right {
+  padding: 65px 15px 0 30px;
+}
+/* line 15, sass/module/_projects.scss */
+.projects .block-top-right p {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  margin: 0;
+  padding-bottom: 30px;
+}
+/* line 22, sass/module/_projects.scss */
+.projects .block-top-right .calendar {
+  color: #b5b5b5;
+}
+/* line 25, sass/module/_projects.scss */
+.projects .block-top-right .folder {
+  color: #ab987a;
+}
+/* line 28, sass/module/_projects.scss */
+.projects .block-top-right .show-text-top {
+  font-family: Roboto-Bold, sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  color: #0d3948;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+/* line 37, sass/module/_projects.scss */
+.projects .block-top-right .show-text {
+  font-family: Lato-Light, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #616161;
+  padding-bottom: 50px;
+}
+/* line 44, sass/module/_projects.scss */
+.projects .block-top-right .show-social {
+  margin-top: 70px;
+}
+/* line 46, sass/module/_projects.scss */
+.projects .block-top-right .show-social span {
+  padding-right: 30px;
+  font-size: 14px;
+  line-height: 23px;
+  color: #b5b5b5;
+}
+/* line 51, sass/module/_projects.scss */
+.projects .block-top-right .show-social span .fa {
+  font-size: 18px;
+}
+/* line 57, sass/module/_projects.scss */
+.projects .blocknavi {
+  padding-top: 30px;
+  color: #b5b5b5;
+  font-size: 24px;
+}
+/* line 62, sass/module/_projects.scss */
+.projects .show {
+  height: 568px;
+}
+
+/***************** ACTION *************************/
+/* line 2, sass/module/_action.scss */
+.action {
+  background-color: #f8f9fb;
+  min-height: 202px;
+  line-height: 202px;
+  padding-top: 150px;
+}
+/* line 7, sass/module/_action.scss */
+.action .action-text {
+  padding-top: 20px;
+}
+/* line 10, sass/module/_action.scss */
+.action .zik {
+  height: 360px;
+}
+/* line 13, sass/module/_action.scss */
+.action .zik p {
+  padding: 20px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  color: #fff;
+}
+/* line 22, sass/module/_action.scss */
+.action .middle {
+  height: 190px;
+  border: 30px #f8f9fb solid;
+  border-top: none;
+  padding: 0;
+}
+/* line 28, sass/module/_action.scss */
+.action .middle-bottom {
+  border-bottom: none;
+  height: 170px;
+}
+/* line 32, sass/module/_action.scss */
+.action .arrows {
+  margin-top: 60px;
+  margin-bottom: 160px;
+}
+/* line 35, sass/module/_action.scss */
+.action .arrows p {
+  line-height: 63px;
+}
+/* line 39, sass/module/_action.scss */
+.action .square-arrow1, .action .square-arrow2 {
+  width: 66px;
+  height: 66px;
+  margin-left: 30px;
+  border: 1px solid #ab987a;
+  color: #ab987a;
+  text-align: center;
+}
+/* line 47, sass/module/_action.scss */
+.action .square-arrow2 {
+  background-color: #ab987a;
+}
+/* line 49, sass/module/_action.scss */
+.action .square-arrow2 p {
+  color: #fff;
+}
+/* line 54, sass/module/_action.scss */
+.action .skype {
+  font-size: 120px;
+  line-height: 120px;
+  padding-top: 15px;
+  display: inline-block;
+  color: #0d3948;
+}
+/* line 62, sass/module/_action.scss */
+.action .squares {
+  padding-right: 0;
+}
+/* line 65, sass/module/_action.scss */
+.action .squares .square-details {
+  margin-right: 30px;
+  color: #0d3948;
+  background-color: inherit;
+}

@@ -1,0 +1,30 @@
+/***************** LESSON *************************/
+
+.lessons {
+  background-color: #032f3e;
+  color: #fff;
+  padding: 100px 0;
+
+  .lessons-left {
+    padding-top: 10px;
+    text-align: center;
+  }
+  p {
+    font-family: Roboto-Bold, sans-serif;;
+    font-size: 18px;
+    line-height: 29px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+
+  h4 {
+    margin-bottom: 90px;
+  }
+
+  .vertical-separator{
+    border-left : 1px $taupe solid;
+    margin: 18px  0 18px 30px ;
+    height: 57px;
+  }
+}

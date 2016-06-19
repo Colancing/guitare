@@ -1,0 +1,71 @@
+/***************** ACTION *************************/
+.action {
+  background-color: #f8f9fb;
+  min-height: 202px;
+  line-height: 202px;
+  padding-top: 150px;
+  .action-text {
+    padding-top: 20px;
+  }
+  .zik {
+    height: 360px;
+
+    p {
+      padding: 20px;
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+      line-height: 23px;
+      color: #fff;
+
+    }
+  }
+  .middle {
+    height: 190px;
+    border: 30px #f8f9fb solid;
+    border-top: none;
+    padding: 0;
+  }
+  .middle-bottom {
+    border-bottom: none;
+    height: 170px;
+  }
+  .arrows {
+    margin-top: 60px;
+    margin-bottom:160px;
+    p {
+      line-height: 63px;
+    }
+  }
+  .square-arrow1, .square-arrow2 {
+    width: 66px;
+    height: 66px;
+    margin-left:30px;
+    border: 1px solid $taupe;
+    color: $taupe;
+    text-align:center;
+  }
+  .square-arrow2 {
+    background-color:$taupe;
+    p{
+      color: #fff;
+
+    }
+  }
+  .skype {
+    font-size: 120px;
+    line-height: 120px;
+    padding-top: 15px;
+    display: inline-block;
+    color: $darkblue;
+  }
+
+  .squares {
+    padding-right: 0;
+
+    .square-details {
+      margin-right: 30px;
+      color: $darkblue;
+      background-color: inherit;
+    }
+  }
+}
