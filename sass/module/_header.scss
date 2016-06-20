@@ -33,6 +33,9 @@ header {
     z-index:1;
     background-color: #032f3e;
     @include box-shadow(#656565 0 30px 30px);
+    .navbar-collapse{
+      padding:0;
+    }
   }
   //
   .navbar-default .navbar-nav {

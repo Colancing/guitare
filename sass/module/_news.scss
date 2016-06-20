@@ -1,0 +1,117 @@
+/***************** NEWS *************************/
+
+.news {
+  h5 {
+    font-size: 16px;
+    line-height: 32px;
+    text-transform: uppercase;
+    padding-top: 10px;
+  }
+  .line-separator {
+    margin: 20px auto;
+  }
+  .news-text {
+    padding-bottom: 120px;
+  }
+  .leftbox{
+    height: 480px;
+  }
+  .news-left-grey {
+    height: 180px;
+  }
+  .info-inside {
+    padding: 0;
+  }
+  .info-inside1, .info-inside2, .info-inside3 {
+    height: 60px;
+    width: 60px;
+    padding: 7px;
+    text-align: center;
+    p {
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+      padding: 0;
+      margin: 0;
+      color: #fff;
+    }
+    .fa {
+      font-size: 25px;
+    }
+  }
+  .info-inside1 {
+    background-color: $taupe;
+  }
+  .info-inside2 {
+    background-color: $darkblue;
+  }
+  .info-inside1 {
+    background-color: $taupe;
+    p {
+      color: white
+    }
+  }
+  .left-bottom {
+
+    .line-separator {
+      width: 170px;
+      margin: 20px 0;
+    }
+    p {
+      margin-bottom: 25px;
+    }
+    .left-total-bottom {
+      color: $taupe;
+      p {
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        line-height: 23px;
+        color: $taupe;
+        margin: 0;
+        padding-bottom: 15px;
+        .fa {
+          font-size: 16px;
+        }
+        .fa-chevron-circle-right{
+          color : $darkblue;
+        }
+      }
+    }
+  }
+  .right-box{
+    height: 120px;
+    margin-bottom:60px;
+    margin-left: 30px;
+    p{
+      padding:0;
+      margin:0;
+    }
+    .box{
+      height:120px;
+    }
+    .fa{
+      font-sizz: 14px;
+      line-height: 23px;
+      color: $taupe;
+    }
+  }
+  .lastbox{
+    margin-bottom:0;
+    background-color: $darkblue;
+    h5{
+      color:white;
+      text-transform: uppercase;
+      padding-top:10px;
+    }
+  }
+  .box-all{
+    margin : 80px auto 129px;
+    width: 270px;
+    height:60px;
+    border:1px $taupe solid;
+    color:$taupe;
+    text-align: center;
+    font-size: 18px;
+    line-height:60px;
+    font-family:Roboto-Bold, sans-serif;
+  }
+}

@@ -10,26 +10,28 @@
   src: url('/font/Roboto-Thinitalic.ttf');
 }
 
+
+
 body {
   background-color: #f8f9fb;
   font-family: 'lato', sans-serif;
+  min-height: 9000px;
 }
 
-.container-big, container-middle {
-  max-width: 1700px;
-  padding: 0;
-  margin : 0 auto;
-  //border : 2px red solid;
+.container-fluid {
+  //border: 2px red solid;
+  width:1700px;
+  padding:0;
 }
 
 .container-middle {
-  max-width: 1200px;
-  //border : 1px blue solid;
+  width: 70.6%;
+  //border: 1px blue solid;
 }
 
 .container-small {
-  max-width: 1070px;
-  //border : 1px blue solid;
+  width: 56.94%;
+  //border: 1px pink solid;
 }
 
 p {

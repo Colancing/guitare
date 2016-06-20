@@ -1,3 +1,62 @@
-p{
-  color:red;
+.testimonials {
+  position: relative;
+  background-color: #e1e1e1;
+  height: 755px;
+  border-bottom: 7px $taupe solid;
+  h2 {
+    margin: 0;
+    padding: 110px 0 0;
+  }
+  .circle-nav {
+    margin: 75px auto 20px auto;
+
+    .circle {
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+      background-color: grey;
+      border: 1px $taupe solid;
+    }
+    .square-arrow {
+      width: 66px;
+      height: 66px;
+      margin-top: 115px;
+      border: 1px solid $taupe;
+      color: $taupe;
+      text-align: center;
+      p {
+        line-height: 66px;
+      }
+    }
+
+  }
+  .container-xsmall {
+    width: 775px;
+    h5 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    h6 {
+      font-size: 18px;
+      line-height: 36px;
+      color: $taupe;
+    }
+  }
+  p {
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .testimo-bump, .down {
+    position: absolute;
+    bottom: -5px;
+    left: 850px - 93px;
+  }
+
+  .down {
+    color:#fff;
+    font-size: 22px;
+    left: 850px - 8px;
+padding-bottom:10px;
+  }
+
 }
